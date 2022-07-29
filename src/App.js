@@ -1,34 +1,34 @@
 import logo from './clearthoughts-logo2bg.png';
 import './App.css';
-import Onboarding from './components/onboarding/Onboarding';
-import { useEffect, useState } from 'react';
+import Why from './pages/why/Why';
+import Home from './pages/home/Home';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Practice from './pages/practice/Practice';
+import Demo from './pages/demo/Demo';
 
 function App() {
-  const [isOpen, setIsOpen] = useState(true)
 
-  useEffect(()=>{
-    function checkUserData() {
-      const item = localStorage.getItem('userId')
-      
-      if (item) {
-        setIsOpen(false)
-      }else{
-        setIsOpen(true)
-      }
-    }
-    checkUserData()
-    window.addEventListener('storage', checkUserData)
-
-    return () => {
-      window.removeEventListener('storage', checkUserData)
-    }
-  },[])
   return (
-    <div className="App">
-      <img src={logo} className='logo'/>
-      {
-        isOpen && <Onboarding setIsOpen={setIsOpen}/>
-      }
+    <div>
+        <div className="App">
+          <div className='header'>
+            <img src={logo} className='logo'/>
+            {localStorage.getItem('userName') && <p className='username'>{localStorage.getItem('userName')}</p>}
+          </div>
+
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element = {<Home />} />
+              <Route path="/why" element={<Why />} />
+              <Route path="/demo" element={<Demo />} />
+              <Route path="/practice" element={<Practice />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
     </div>
   );
 }

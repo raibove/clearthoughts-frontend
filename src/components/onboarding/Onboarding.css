@@ -35,8 +35,15 @@
     float: right;
 }
 
-.username{
+.username-input{
     font-size: 20px;
     height: 30px;
     border: none;
+    color: #000;
+}
+
+.next:disabled{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
