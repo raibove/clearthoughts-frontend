@@ -11,12 +11,11 @@ import Practice from './pages/practice/Practice';
 import Demo from './pages/demo/Demo';
 
 function App() {
-
   return (
     <div>
         <div className="App">
           <div className='header'>
-            <img src={logo} className='logo'/>
+            <img src={logo} className='logo' />
             {localStorage.getItem('userName') && <p className='username'>{localStorage.getItem('userName')}</p>}
           </div>
 
