@@ -18,6 +18,15 @@
     box-shadow: inset -6px -6px 12px #be9326,
                 inset 6px 6px 12px #f7bf31;
     transition: transform 0.1s ease;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button-image{
+    width: 32px;
+    margin: 0 25px ;
 }
 
 

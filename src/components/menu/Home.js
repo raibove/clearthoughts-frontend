@@ -1,5 +1,8 @@
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
+import why from "./why.png"
+import sample from "./sample.png"
+import practice from "./practice.png"
 
 const Home = ()=>{
     
@@ -8,13 +11,13 @@ const Home = ()=>{
         <div className="home">
             <button className="home-button" onClick={()=>{
                 navigate('../why')
-            }}>Why</button>
+            }}> <img src={why} className='button-image'/> <span>The Why's</span>  </button>
             <button className="home-button"  onClick={()=>{
                 navigate('../demo')
-            }}>Demo</button>
+            }}> <img src={sample} className='button-image'/> <span>Sample</span> </button>
             <button className="home-button"  onClick={()=>{
                 navigate('../practice')
-            }}>Practice</button>
+            }}> <img src={practice} className='button-image'/> <span>Practice</span> </button>
         </div>
     )
 }
