@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import Onboarding from "../../components/onboarding/Onboarding"
 import Menu from "../../components/menu/Home"
+import Header from "../../components/header/Header"
 
 const Home = ()=>{
     const [isOpen, setIsOpen] = useState(true)
@@ -25,6 +26,7 @@ const Home = ()=>{
 
     return(
         <div>
+          <Header/>
             {
                 isOpen && <Onboarding setIsOpen={setIsOpen}/>
             }
