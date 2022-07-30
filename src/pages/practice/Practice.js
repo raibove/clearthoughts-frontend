@@ -8,7 +8,7 @@ const Practice = ()=>{
     const [index, setIndex] = useState(0)
 
     const getQuestions = async ()=>{
-        let response = await axios.get('http://localhost:5001/questions')
+        let response = await axios.get('http://localhost:5001/question')
         setQuestions(response.data)
     }
 
