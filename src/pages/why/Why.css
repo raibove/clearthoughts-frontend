@@ -2,7 +2,6 @@
     background-color: antiquewhite;
     width: 85vw;
     margin: auto;
-    text-align: center;
     border-radius: 15px;
 
 }
@@ -10,14 +9,19 @@
 .why-heading{
     color: black;
     border-radius: 15px;
+    font-size: 20px;
+    font-weight: 450;
     /* background-color: aquamarine; */
     background-color: var(--yellow);
-    padding: 15px 0;
+    padding: 10px 0;
+    padding-left: 2vw;
+    margin: 0;
+
 }
 
 .why-content{
     border-radius: 15px;
-    background-color: white;
     padding: 15px;
     font-size: 18px;
+    margin-top: 0;
 }
