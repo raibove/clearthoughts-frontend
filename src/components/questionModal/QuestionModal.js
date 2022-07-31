@@ -6,7 +6,8 @@ import Table from "../table/Table"
 
 const QuestionModal = ({questions, index, setIndex, answers, setAnswers})=>{
 
-    const [showAnswer, setShowAnswer] = useState(true)
+    const [showTable, setShowTable] = useState(false)
+    const [showAnswer, setShowAnswer] = useState(false)
     const nextIndex = ()=>{
         if(index<questions.length-1){
             setIndex(index+1)
@@ -64,7 +65,13 @@ const QuestionModal = ({questions, index, setIndex, answers, setAnswers})=>{
                 questions.length !=0 &&
                 <div className="practice">
                     {showAnswer===true? 
-                        <Table data={answers}/>     
+                        <>
+                            {showTable === true ?
+                                <Table data={answers} setShowTable={setShowTable}/>     
+                                :
+                                <AnswerModal answers={answers} setShowTable = {setShowTable} />
+                            }
+                        </>
                     :
                         <div>
                         <div>
