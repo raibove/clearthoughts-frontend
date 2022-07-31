@@ -1,0 +1,18 @@
+.oops{
+    width: 25vw;
+}
+
+.oops-heading{
+    color: white;
+    font-size: 20px;
+}
+
+.oops-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    margin-top: 10vh;
+}

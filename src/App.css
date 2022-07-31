@@ -1,7 +1,7 @@
 .App {
   background-color: var(--dark-navy);
-  width: 100vw;
-  height: 100vh;
+  min-height: 99vh;
+  padding-bottom: 1vh;
 }
 
 .logo{

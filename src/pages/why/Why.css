@@ -1,0 +1,23 @@
+.why-container{
+    background-color: antiquewhite;
+    width: 85vw;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.why-heading{
+    color: black;
+    border-radius: 15px;
+    /* background-color: aquamarine; */
+    background-color: var(--yellow);
+    padding: 15px 0;
+}
+
+.why-content{
+    border-radius: 15px;
+    background-color: white;
+    padding: 15px;
+    font-size: 18px;
+}

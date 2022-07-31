@@ -10,6 +10,7 @@ import {
 import Practice from './pages/practice/Practice';
 import Demo from './pages/demo/Demo';
 import Footer from './components/footer/Footer';
+import NotFound from './pages/notFound/NotFound';
 
 function App() {
   return (
@@ -17,13 +18,13 @@ function App() {
         <div className="App">
           <BrowserRouter>
             <Routes>
+              <Route path='*' element={<NotFound />} />
               <Route path="/" element = {<Home />} />
               <Route path="/why" element={<Why />} />
               <Route path="/demo" element={<Demo />} />
               <Route path="/practice" element={<Practice />} />
             </Routes>
           </BrowserRouter>
-          <Footer/>
         </div>
 
     </div>

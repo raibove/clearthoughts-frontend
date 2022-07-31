@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import Onboarding from "../../components/onboarding/Onboarding"
 import Menu from "../../components/menu/Home"
 import Header from "../../components/header/Header"
+import Footer from "../../components/footer/Footer"
 
 const Home = ()=>{
     const [isOpen, setIsOpen] = useState(true)
@@ -33,6 +34,7 @@ const Home = ()=>{
             {
                 !isOpen && <Menu />
             }
+            <Footer/>
         </div>
     )
 }

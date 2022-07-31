@@ -6,6 +6,7 @@ import "./Demo.css";
 import Loader from "../../components/loader/Loading";
 import axios from "axios";
 import QuestionModal from "../../components/questionModal/QuestionModal";
+import Footer from "../../components/footer/Footer";
 
 const Demo = ()=>{
     const [answers, setAnswers] = useState([{
@@ -71,6 +72,7 @@ const Demo = ()=>{
                     }   
                 </div>
             }
+            <Footer />
         </div>
     )
 }

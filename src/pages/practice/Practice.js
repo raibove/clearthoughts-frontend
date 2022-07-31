@@ -4,6 +4,7 @@ import "./Practice.css"
 import axios from "axios";
 import Header from "../../components/header/Header";
 import Loader from "../../components/loader/Loading";
+import Footer from "../../components/footer/Footer";
 
 const Practice = ()=>{
     const [questions, setQuestions] = useState([])
@@ -32,6 +33,7 @@ const Practice = ()=>{
                 loading===true? <div><Loader/></div>:
                 <QuestionModal questions={questions} index={index} setIndex={setIndex} answers={answers} setAnswers={setAnswers}/>
            }
+           <Footer />
         </div>
     )
 }
