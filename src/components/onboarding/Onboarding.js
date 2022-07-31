@@ -2,6 +2,7 @@ import './Onboarding.css';
 import React, {useState} from "react";
 import axios from "axios";
 import introVideo from "./intro.mp4"
+import teddy from "./teddy.png"
 
 function Onboarding({setIsOpen}) {
   const [journey, setJourney] = useState(0)
@@ -25,18 +26,25 @@ function Onboarding({setIsOpen}) {
       <div className='content'>
         {
           journey==0 && 
-          <h2>Welcome to clearThoughts</h2>
+          <>
+            <h1 className='welcome'>Welcome to clearThoughts</h1>
+            <img src={teddy} alt="teddy" className='teddy'/>
+          </>
         }
         {
           journey ==1 && 
+          <>
+            <h2 className='welcome'>Let's watch a small intro video</h2>
             <video className='video' controls >
-            <source src={introVideo} type="video/mp4"/>
-          </video>
+              <source src={introVideo} type="video/mp4"/>
+            </video>
+          </>
         }{
           journey==2 && 
           <div>
             <h3>Enter username to get started</h3>
             <input placeholder='enter username' type="text" vale={username} onChange={(e)=>setUsername(e.target.value)} className='username-input' onKeyPress={(e)=>{if(e.code === "Enter" || e.code === "NumpadEnter") submitUsername()}}/>
+            {showError && <p className='error-username'>Username already exist please enter different username</p>}
           </div>
         }
       </div>

@@ -26,3 +26,19 @@
     border-radius: 5px;
 }
 
+
+@media only screen and (max-width: 550px) {
+
+    .answer{
+        font-size: 16px;
+        min-height: 22px;
+        margin: 0px;
+        width: 90%;
+    }
+
+    .practice{
+        width: 75vw;
+        padding: 80px 10px;
+        padding-top: 5px;
+    }
+}

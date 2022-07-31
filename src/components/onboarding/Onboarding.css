@@ -28,8 +28,8 @@
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 6px 15px;
-    font-size: 16px;
+    padding: 8px 18px;
+    font-size: 18px;
     cursor: pointer;
     width: fit-content;
     float: right;
@@ -47,3 +47,42 @@
   background-color: #cccccc;
   color: #666666;
 }
+
+.teddy{
+    width: 15em;
+}
+
+.error-username{
+    color: red;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 550px) {
+    .Onboarding{
+        min-height: 40vh;
+        width: 65vw;
+    }
+
+    .welcome{
+        font-size: 20px;
+    }
+    .teddy{
+        width: 10em;
+    }
+
+    .video{
+        width: 100%;
+        height: 100%;
+    }
+
+    .username-input{
+        width: 50vw;
+        font-size: 15px;
+        height: 25px;
+    }
+
+    .next{
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+  }

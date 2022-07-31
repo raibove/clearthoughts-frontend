@@ -17,3 +17,13 @@
     column-gap: 8em;
     justify-content: space-around;
 }
+
+@media only screen and (max-width: 550px) {
+    .answer-buttons{
+        justify-content: unset;
+
+    }
+    .go-history, .go-home, .go-table{
+        width: 25px;
+    }
+}

@@ -45,3 +45,19 @@
     border: 3px #1f354b solid;
     color: #1f354b;
 }
+
+@media only screen and (max-width: 550px) {
+    .question{
+        font-size: 18px;
+    }
+
+    .button-container{
+        bottom: 1em;
+        width: 75vw;
+    }
+
+    .next-question,.previous-question{
+        padding: 4px;
+        font-size: 15px;
+    }
+}

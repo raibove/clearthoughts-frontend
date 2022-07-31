@@ -11,7 +11,7 @@ const Home = ()=>{
         <div className="home">
             <button className="home-button" onClick={()=>{
                 navigate('../why')
-            }}> <img src={why} className='button-image'/> <span>The Why's</span>  </button>
+            }}> <img src={why} className='button-image'/> <span>Why's & What</span>  </button>
             <button className="home-button"  onClick={()=>{
                 navigate('../demo')
             }}> <img src={sample} className='button-image'/> <span>Sample</span> </button>

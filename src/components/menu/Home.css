@@ -51,3 +51,15 @@
 .home-button:hover::before {
     transform: translate(10px, 10px);
   }
+
+@media only screen and (max-width: 550px) {
+    .home{
+        min-height: 50vh;
+    }
+
+    .home-button{
+        width: 220px;
+        height: 55px;
+        font-size: 18px;
+    }
+}
