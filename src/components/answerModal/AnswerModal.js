@@ -1,22 +1,26 @@
 import { useState, useEffect } from "react"
 import history from "./history.png"
+import table from "./table.png"
 import home from "./home.png"
 import "./AnswerModal.css"
 import { useNavigate } from "react-router-dom"
 
 const AnswerModal = ({answers})=>{
+
     let navigate = useNavigate()
+    // position:"absolute", top:0, bottom:0
     return(
-        <div  style={{position:"absolute", top:0, bottom:0}}>
+        <div>
             <div>
-            <h2 className="question">Before using 5-I message</h2>
-            <p className="question-description">{answers[0].value}</p>
-            <h2 className="question">After using 5-I message</h2>
+                <h2 className="question">Before using five I-message</h2>
+                <p className="question-description">{answers[0].value}</p>
+                <h2 className="question">After using five I-message</h2>
+                <p>{`${answers[1].value} ${answers[2].value} ${answers[3].value} ${answers[4].value} ${answers[5].value} `}</p>
             </div>
-            <div className="button-container">
-                <img src ={home} alt="Home" className="go-home" onClick={()=>navigate('../')}/>
-                {/* <button className="previous-question" >Back</button> */}
-                <img src ={history} alt="History" className="go-history" onClick={()=>navigate('../')}/>
+            <div className="answer-buttons">
+                <img src = {table} alt = "Table" className="go-table"/>
+                <img src = {home} alt="Home" className="go-home" onClick={()=>navigate('../')}/>
+                <img src = {history} alt="History" className="go-history" onClick={()=>navigate('../')}/>
             </div>
         </div>
     )

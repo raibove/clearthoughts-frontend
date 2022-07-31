@@ -2,10 +2,11 @@ import "./QuestionModal.css"
 import { useState, useEffect } from "react"
 import axios from "axios"
 import AnswerModal from "../answerModal/AnswerModal"
+import Table from "../table/Table"
 
 const QuestionModal = ({questions, index, setIndex, answers, setAnswers})=>{
 
-    const [showAnswer, setShowAnswer] = useState(false)
+    const [showAnswer, setShowAnswer] = useState(true)
     const nextIndex = ()=>{
         if(index<questions.length-1){
             setIndex(index+1)
@@ -19,9 +20,11 @@ const QuestionModal = ({questions, index, setIndex, answers, setAnswers})=>{
     }
 
     const updateAnswer = (e)=>{
-        let tempAnswers = answers
-        tempAnswers[index].value = e.target.value
-        setAnswers([...tempAnswers])
+        if(setAnswers!=undefined){
+            let tempAnswers = answers
+            tempAnswers[index].value = e.target.value
+            setAnswers([...tempAnswers])
+        }
     }
 
     const getIsLast = ()=>{
@@ -32,18 +35,22 @@ const QuestionModal = ({questions, index, setIndex, answers, setAnswers})=>{
 
     const submit = async ()=>{
         try{
-            let data = {
-                userId: localStorage.getItem('userId'),
-                answer1: answers[0].value,
-                answer2: answers[1].value,
-                answer3: answers[2].value,
-                answer4: answers[3].value,
-                answer5: answers[4].value,
-                answer6: answers[5].value
-            }
-            let response = await axios.post("https://clearthoughts.herokuapp.com/answer", data)
-            console.log(response)
-            if(response){
+            if(setAnswers!==undefined){
+                let data = {
+                    userId: localStorage.getItem('userId'),
+                    answer1: answers[0].value,
+                    answer2: answers[1].value,
+                    answer3: answers[2].value,
+                    answer4: answers[3].value,
+                    answer5: answers[4].value,
+                    answer6: answers[5].value
+                }
+                let response = await axios.post("https://clearthoughts.herokuapp.com/answer", data)
+                console.log(response)
+                if(response){
+                    setShowAnswer(true)
+                }
+            }else{
                 setShowAnswer(true)
             }
         }catch(err){
@@ -57,13 +64,13 @@ const QuestionModal = ({questions, index, setIndex, answers, setAnswers})=>{
                 questions.length !=0 &&
                 <div className="practice">
                     {showAnswer===true? 
-                        <AnswerModal answers={answers}/>     
+                        <Table data={answers}/>     
                     :
                         <div>
                         <div>
                         <h2 className="question">{questions[index].title}</h2>
                         <p className="question-description">{questions[index].description}</p>
-                        <input className="answer" placeholder="enter answer" value={answers[index].value} onChange={updateAnswer}/>
+                        <textarea className="answer" placeholder="enter answer" value={answers[index].value} onChange={updateAnswer}/>
                         </div>
                         <div className="button-container">
                             { index!=0 && <button className="previous-question" onClick={previousIndex}>Back</button>}

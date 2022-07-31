@@ -6,6 +6,7 @@
     width: 80vw;
     margin: auto;
 }
+
 .table::-webkit-scrollbar {
     display: none;
 }
