@@ -12,11 +12,10 @@
     width: 250px;
     height: 75px;
     font-size: 20px;
-    border: none;
     border-radius: 30px;
     background: #f7bf31;
-    box-shadow: inset -6px -6px 12px #be9326,
-                inset 6px 6px 12px #f7bf31;
+    box-shadow:   -6px -6px 12px #ffd876,
+                 6px 6px 12px #fff176;
     transition: transform 0.1s ease;
 
     display: flex;
@@ -28,8 +27,8 @@
     width: 32px;
     margin: 0 25px ;
 }
-
-
+/* 
+.home-button::after, */
 .home-button::before {
     content: "";
     position: absolute;
@@ -45,8 +44,10 @@
 }
 
 .home-button:hover {
-    transform: translate(-3px, -3px);
+    transform: translate(-8px, -8px);
+    box-shadow: none;
 }
+
 .home-button:hover::before {
-    transform: translate(6px, 6px);
+    transform: translate(10px, 10px);
   }

@@ -1,5 +1,47 @@
+
+.question{
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0;
+}
+
+.question-description{
+    margin-top: 0;
+}
+
 .button-container{
     bottom: 2em;
     position: absolute;
     width:inherit;
+}
+
+
+.previous-question{
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    color: white;
+    background-color: #074343;
+    padding: 10px 25px;
+    border: 3px #074343 solid;
+}
+
+.next-question{
+    background-color: #074343;
+    padding: 10px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    color: white;
+    border: 3px #074343 solid;
+
+}
+
+.previous-question:hover,.next-question:hover{
+    background-color: #f7bf31;
+    border: 3px #1f354b solid;
+    color: #1f354b;
 }

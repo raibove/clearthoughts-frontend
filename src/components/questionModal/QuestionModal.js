@@ -1,6 +1,8 @@
 import "./QuestionModal.css"
+import { useState, useEffect } from "react"
 
-const QuestionModal = ({questions, index, setIndex})=>{
+const QuestionModal = ({questions, index, setIndex, answers, setAnswers})=>{
+   
 
     const nextIndex = ()=>{
         if(index<questions.length-1){
@@ -13,6 +15,23 @@ const QuestionModal = ({questions, index, setIndex})=>{
             setIndex(index-1)
         }
     }
+
+    const updateAnswer = (e)=>{
+        let tempAnswers = answers
+        tempAnswers[index].value = e.target.value
+        setAnswers([...tempAnswers])
+    }
+
+    const getIsLast = ()=>{
+        if(index==questions.length-1)
+            return true
+        return false
+    }
+
+    const submit = ()=>{
+        console.log(answers)
+    }
+
     return(
         <div>
             {
@@ -21,11 +40,12 @@ const QuestionModal = ({questions, index, setIndex})=>{
                     <div>
                     <h2 className="question">{questions[index].title}</h2>
                     <p className="question-description">{questions[index].description}</p>
-                    <input className="answer" placeholder="enter answer"/>
+                    <input className="answer" placeholder="enter answer" value={answers[index].value} onChange={updateAnswer}/>
                     </div>
                     <div className="button-container">
-                        {index!=0 && <button className="previous-question" onClick={previousIndex}>Back</button>}
-                        <button className="next-question" onClick={nextIndex}>Next</button>
+                        { index!=0 && <button className="previous-question" onClick={previousIndex}>Back</button>}
+                        { !getIsLast() && <button className="next-question" onClick={nextIndex}>Next</button>}
+                        { getIsLast() && <button className="next-question" onClick={submit}>Submit</button>}
                     </div>
                 </div>
             }
