@@ -1,0 +1,31 @@
+
+.table{
+    overflow: auto;
+    max-height: 75vh;
+    font-family: arial, sans-serif;
+    width: 80vw;
+    margin: auto;
+}
+.table::-webkit-scrollbar {
+    display: none;
+}
+
+  .cell{
+    border: 1px solid var(--navy);
+    padding: 8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: unset !important;
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  .row-header .cell{
+    color: white;
+    background: var(--blue);
+}
+  .row .cell{
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,10 @@
+.go-home{
+    width: 50px;
+    cursor: pointer;
+}
+
+.go-history{
+    width: 50px;
+    cursor: pointer;
+    float: right;
+}
