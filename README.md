@@ -13,6 +13,9 @@
   clearThoughts is a tool that will help you improve your communication skill. You can make use of what we see, feel and hear to express it to the listners, clearThoughts will serve as a guide so that you can improve your skill and practice.
 </p>
 </div>
+
+<img src="src/assets/clearthoughts_gif.gif" alt = "clearthoughts gif"  />
+
 ---
 
 ## Links
