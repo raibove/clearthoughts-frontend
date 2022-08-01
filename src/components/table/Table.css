@@ -3,9 +3,6 @@
     overflow: auto;
     max-height: 50vh;
     font-family: arial, sans-serif;
-    /* width: 80vw;
-    max-height: 75vh;
-    margin: auto; */
 }
 
 .table::-webkit-scrollbar {
@@ -15,14 +12,7 @@
 .cell{
     border: 1px solid var(--black);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
     font-weight: unset !important;
-    /* padding-top: 19px;
-    padding-bottom: 19px; 
-    font-size: 18px;
-    line-height: 1.2;
-    padding: 8px;
-    */
 }
 
 .row-header .cell{

@@ -11,7 +11,6 @@
     border-radius: 15px;
     font-size: 20px;
     font-weight: 450;
-    /* background-color: aquamarine; */
     background-color: var(--yellow);
     padding: 10px 0;
     padding-left: 2vw;
@@ -24,4 +23,21 @@
     padding: 15px;
     font-size: 18px;
     margin-top: 0;
+}
+
+.why-video-container{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-video{
+    width: 25vw;
+}
+
+@media only screen and (max-width: 550px){
+.why-video {
+    width: 85%;
+}
 }

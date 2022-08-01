@@ -1,6 +1,7 @@
 import Header from "../../components/header/Header";
 import "./Why.css";
 import fiveI from "../../assets/fiveI.png"
+import introVideo from "../../components/onboarding/intro.mp4"
 
 const Why = ()=>{
     return(
@@ -17,6 +18,11 @@ const Why = ()=>{
                     necessary to get their point across well. clearThoughts make use of one of such 
                     technique to help you to transmit and receive information effectively.
                 </p>
+                <div className="why-video-container">
+                    <video className='why-video' controls >
+                    <source src={introVideo} type="video/mp4"/>
+                    </video>
+                </div>
             </div>
             <br/>
             <div className="why-container">

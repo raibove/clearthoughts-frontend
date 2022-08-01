@@ -27,8 +27,7 @@
     width: 32px;
     margin: 0 25px ;
 }
-/* 
-.home-button::after, */
+
 .home-button::before {
     content: "";
     position: absolute;
