@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/raibove/clearthoughts-frontend">
-    <img src="src/clearthoughts-logo2bg.png" alt="Logo" width="200" height="100" background="#1f354b">
+    <img src="src/assets/clearthoughtsLogo.png" alt="Logo" width="200" height="100" background="#1f354b">
   </a>
 <h3 align="center">clearThoughts - Express yourself more clearly and confidently !!</h3>
 
