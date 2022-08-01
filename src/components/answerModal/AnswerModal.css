@@ -20,8 +20,8 @@
 
 @media only screen and (max-width: 550px) {
     .answer-buttons{
-        justify-content: unset;
-
+        /* justify-content: unset; */
+        width: 100%;
     }
     .go-history, .go-home, .go-table{
         width: 25px;

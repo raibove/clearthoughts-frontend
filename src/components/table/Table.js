@@ -55,7 +55,7 @@ const Table = ({data, setShowTable})=>{
             </table>
             <div className="answer-buttons">
                 <img src = {para} alt = "Table" className="go-table" onClick={()=>{setShowTable(false)}}/>
-                <img src = {history} alt="History" className="go-history" onClick={()=>navigate('../')}/>
+                {/* <img src = {history} alt="History" className="go-history" onClick={()=>navigate('../')}/> */}
                 <img src = {home} alt="Home" className="go-home" onClick={()=>navigate('../')}/>
             </div>
         </div>

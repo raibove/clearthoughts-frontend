@@ -27,6 +27,12 @@ function Onboarding({setIsOpen}) {
     }
   }
 
+  const handleKeypress = (e)=>{
+    if (e.keyCode === 13) {
+      submitUsername()
+    }
+}
+
   return (
     <div className="Onboarding">
       <div className='content'>
@@ -51,7 +57,7 @@ function Onboarding({setIsOpen}) {
             {loading===true? <Loader/>:
             <>
               <h3>Enter username to get started</h3>
-              <input placeholder='enter username' type="text" vale={username} onChange={(e)=>setUsername(e.target.value)} className='username-input' onKeyPress={(e)=>{if(e.code === "Enter" || e.code === "NumpadEnter") submitUsername()}}/>
+              <input placeholder='enter username' type="text" vale={username} onChange={(e)=>setUsername(e.target.value)} className='username-input' onKeyPress={(e)=>{if(e.code === "Enter" || e.code === "NumpadEnter") submitUsername()}} onKeyDown={(e)=>handleKeypress(e)}/>
               {showError && <p className='error-username'>Username already exist please enter different username</p>}
             </>}
           </div>
