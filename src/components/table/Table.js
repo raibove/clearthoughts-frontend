@@ -1,7 +1,7 @@
 import "./Table.css"
-import history from "../answerModal/history.png"
-import para from "../answerModal/para.png"
-import home from "../answerModal/home.png"
+import history from "../../assets/history.png"
+import para from "../../assets/para.png"
+import home from "../../assets/home.png"
 import { useNavigate } from "react-router-dom"
 
 const Table = ({data, setShowTable})=>{

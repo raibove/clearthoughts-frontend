@@ -1,7 +1,7 @@
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import "./NotFound.css";
-import oops from "./oops.png"
+import oops from "../../assets/oops.png"
 
 const NotFound = ()=>{
     return(

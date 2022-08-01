@@ -1,6 +1,6 @@
 import Header from "../../components/header/Header";
 import "./Why.css";
-import fiveI from "./fiveI.png"
+import fiveI from "../../assets/fiveI.png"
 
 const Why = ()=>{
     return(

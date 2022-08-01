@@ -1,8 +1,8 @@
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
-import why from "./why.png"
-import sample from "./sample.png"
-import practice from "./practice.png"
+import why from "../../assets/why.png"
+import sample from "../../assets/sample.png"
+import practice from "../../assets/practice.png"
 
 const Home = ()=>{
     

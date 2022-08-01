@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "../../components/header/Header";
-import book from "./book.png";
+import book from "../../assets/book.png";
 import "./Demo.css";
 import Loader from "../../components/loader/Loader";
 import axios from "axios";

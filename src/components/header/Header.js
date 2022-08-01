@@ -1,4 +1,4 @@
-import logo from '../../clearthoughts-logo2bg.png';
+import logo from '../../assets/clearthoughtsLogo.png';
 import { useNavigate } from "react-router-dom";
 
 const Header = ()=>{

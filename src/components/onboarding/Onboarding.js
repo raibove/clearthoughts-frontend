@@ -2,7 +2,7 @@ import './Onboarding.css';
 import React, {useState} from "react";
 import axios from "axios";
 import introVideo from "./intro.mp4"
-import teddy from "./teddy.png"
+import teddy from "../../assets/teddy.png"
 import Loader from "../loader/Loader"
 
 function Onboarding({setIsOpen}) {

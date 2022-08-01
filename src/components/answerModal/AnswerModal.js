@@ -1,6 +1,6 @@
-import history from "./history.png"
-import table from "./table.png"
-import home from "./home.png"
+import history from "../../assets/history.png"
+import table from "../../assets/table.png"
+import home from "../../assets/home.png"
 import "./AnswerModal.css"
 import { useNavigate } from "react-router-dom"
 
