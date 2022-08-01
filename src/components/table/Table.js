@@ -9,7 +9,7 @@ const Table = ({data, setShowTable})=>{
 
     const navigate = useNavigate()
 
-    const [defaultData, setDefaultData] = useState([{
+    const defaultData = [{
         message:"seeing, hearing.",
         express:" What are you seeing, hearing or otherwise sensing? (facts only)",
     },
@@ -32,9 +32,7 @@ const Table = ({data, setShowTable})=>{
     {
         message:"so that",
         express:"What positive results will that action, information or commitment lead to in the future?",
-    }
-
-    ])
+    }]
 
     return(
         <div className="table">

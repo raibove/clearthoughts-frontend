@@ -1,15 +1,14 @@
-import { useEffect, useState } from "react";
-import Table from "../../components/table/Table";
+import { useState } from "react";
 import Header from "../../components/header/Header";
 import book from "./book.png";
 import "./Demo.css";
-import Loader from "../../components/loader/Loading";
+import Loader from "../../components/loader/Loader";
 import axios from "axios";
 import QuestionModal from "../../components/questionModal/QuestionModal";
 import Footer from "../../components/footer/Footer";
 
 const Demo = ()=>{
-    const [answers, setAnswers] = useState([{
+    const answers = [{
         value:"Stop that racing!!"
     },{
         value:"John, when I see you racing your wheelchair down the hall."
@@ -25,8 +24,8 @@ const Demo = ()=>{
     },
     {
         value:"so that you can get out of here in one piece and I can stop worrying about a collision"
-    }
-    ])
+    }]
+
     const [showInstruction, setShowInstruction] = useState(true);
     const [loading, setLoading] = useState(false)
     const [questions, setQuestions] = useState([])
@@ -68,7 +67,6 @@ const Demo = ()=>{
                         <div><Loader/></div>
                         :
                         <QuestionModal questions={questions} index={index} setIndex={setIndex} answers={answers} />
-                        // <Table data={answers}/>
                     }   
                 </div>
             }

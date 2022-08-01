@@ -1,4 +1,3 @@
-import logo from './clearthoughts-logo2bg.png';
 import './App.css';
 import Why from './pages/why/Why';
 import Home from './pages/home/Home';
@@ -9,7 +8,6 @@ import {
 } from "react-router-dom";
 import Practice from './pages/practice/Practice';
 import Demo from './pages/demo/Demo';
-import Footer from './components/footer/Footer';
 import NotFound from './pages/notFound/NotFound';
 
 function App() {

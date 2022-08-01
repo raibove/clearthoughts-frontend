@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import axios from "axios";
 import introVideo from "./intro.mp4"
 import teddy from "./teddy.png"
-import Loader from "../loader/Loading"
+import Loader from "../loader/Loader"
 
 function Onboarding({setIsOpen}) {
   const [journey, setJourney] = useState(0)

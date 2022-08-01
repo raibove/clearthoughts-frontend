@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react"
 import history from "./history.png"
 import table from "./table.png"
 import home from "./home.png"
@@ -8,7 +7,7 @@ import { useNavigate } from "react-router-dom"
 const AnswerModal = ({answers, setShowTable})=>{
 
     let navigate = useNavigate()
-    // position:"absolute", top:0, bottom:0
+
     return(
         <div>
             <div>

@@ -1,5 +1,5 @@
 import "./QuestionModal.css"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import axios from "axios"
 import AnswerModal from "../answerModal/AnswerModal"
 import Table from "../table/Table"
@@ -29,9 +29,7 @@ const QuestionModal = ({questions, index, setIndex, answers, setAnswers})=>{
     }
 
     const getIsLast = ()=>{
-        if(index==questions.length-1)
-            return true
-        return false
+        return index==questions.length-1
     }
 
     const submit = async ()=>{

@@ -3,7 +3,7 @@ import QuestionModal from "../../components/questionModal/QuestionModal";
 import "./Practice.css"
 import axios from "axios";
 import Header from "../../components/header/Header";
-import Loader from "../../components/loader/Loading";
+import Loader from "../../components/loader/Loader";
 import Footer from "../../components/footer/Footer";
 
 const Practice = ()=>{
