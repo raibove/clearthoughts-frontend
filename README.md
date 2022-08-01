@@ -14,7 +14,7 @@
 </p>
 </div>
 
-<img src="src/assets/clearthoughts_gif.gif" alt = "clearthoughts gif"  />
+Here is link for [SonarCloud](https://sonarcloud.io/project/overview?id=raibove_clearthoughts-frontend)
 
 ---
 
@@ -22,7 +22,7 @@
 
 GitHub: [Front-End](https://github.com/raibove/clearthoughts-frontend) / [Back-End](https://github.com/raibove/clearthoughts-backend)
 
-Hashnode Article: [link]()
+Hashnode Article: [link](https://raibove.hashnode.dev/clearthoughts-express-yourself-more-clearly-completely-and-effectively)
 
 Deployed Links: [Site](https://clearthoughts.netlify.app/)
 
