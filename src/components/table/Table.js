@@ -1,4 +1,3 @@
-import { useState } from "react"
 import "./Table.css"
 import history from "../answerModal/history.png"
 import para from "../answerModal/para.png"

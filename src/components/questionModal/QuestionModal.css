@@ -17,7 +17,6 @@
 
 .previous-question{
     font-size: 18px;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     float: left;
@@ -31,7 +30,6 @@
     background-color: #074343;
     padding: 10px 25px;
     font-size: 18px;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     float: right;
