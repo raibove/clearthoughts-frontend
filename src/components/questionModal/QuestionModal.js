@@ -14,13 +14,13 @@ const QuestionModal = ({ questions, index, setIndex, answers, setAnswers }) => {
   };
 
   const previousIndex = () => {
-    if (index != 0) {
+    if (index !== 0) {
       setIndex(index - 1);
     }
   };
 
   const updateAnswer = (e) => {
-    if (setAnswers != undefined) {
+    if (setAnswers !== undefined) {
       let tempAnswers = answers;
       tempAnswers[index].value = e.target.value;
       setAnswers([...tempAnswers]);
@@ -61,7 +61,7 @@ const QuestionModal = ({ questions, index, setIndex, answers, setAnswers }) => {
 
   return (
     <div>
-      {questions.length != 0 && (
+      {questions.length !== 0 && (
         <div className="practice">
           {showAnswer === true ? (
             <>
@@ -86,7 +86,7 @@ const QuestionModal = ({ questions, index, setIndex, answers, setAnswers }) => {
                 />
               </div>
               <div className="button-container">
-                {index != 0 && (
+                {index !== 0 && (
                   <button className="previous-question" onClick={previousIndex}>
                     Back
                   </button>
