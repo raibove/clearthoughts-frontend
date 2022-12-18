@@ -22,11 +22,12 @@ Here is link for [SonarCloud](https://sonarcloud.io/project/overview?id=raibove_
 
 GitHub: [Front-End](https://github.com/raibove/clearthoughts-frontend) / [Back-End](https://github.com/raibove/clearthoughts-backend)
 
-Hashnode Article: [link](https://raibove.hashnode.dev/clearthoughts-express-yourself-more-clearly-completely-and-effectively)
+Hashnode Article: [link](https://shwetakale.hashnode.dev/clearthoughts-express-yourself-more-clearly-completely-and-effectively)
 
 Deployed Links: [Site](https://clearthoughts.netlify.app/)
 
---- 
+---
+
 ## Running Locally 💻
 
 #### #1. Clone the repo
