@@ -33,7 +33,7 @@ const Demo = ()=>{
     
 
     const getQuestions = async ()=>{
-        let response = await axios.get('https://clearthoughts.herokuapp.com/question')
+        let response = await axios.get('https://clearthoughts.onrender.com/question')
         setQuestions(response.data)
         if(response.data){
             setLoading(false)

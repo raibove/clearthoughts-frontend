@@ -14,7 +14,7 @@ function Onboarding({setIsOpen}) {
   const submitUsername = async ()=>{
     try{
       setLoading(true)
-      let response = await axios.post('https://clearthoughts.herokuapp.com/user', {name:username})
+      let response = await axios.post('https://clearthoughts.onrender.com/user', {name:username})
       if(response.data){
         localStorage.setItem('userId', response.data.id)
         localStorage.setItem('userName', response.data.name)

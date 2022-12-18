@@ -44,7 +44,7 @@ const QuestionModal = ({questions, index, setIndex, answers, setAnswers})=>{
                     answer5: answers[4].value,
                     answer6: answers[5].value
                 }
-                let response = await axios.post("https://clearthoughts.herokuapp.com/answer", data)
+                let response = await axios.post("https://clearthoughts.onrender.com/answer", data)
                 console.log(response)
                 if(response){
                     setShowAnswer(true)
